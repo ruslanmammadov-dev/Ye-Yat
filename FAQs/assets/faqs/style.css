@@ -1,0 +1,147 @@
+/* Ümumi tənzimləmələr */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.faq-section {
+    padding: 80px 20px;
+    max-width: 1216px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Başlıq */
+.faq-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faq-header h2 {
+    font-size: 32px;
+    color: #2b3044;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.faq-header p {
+    font-size: 16px;
+    color: #6b7280;
+}
+
+/* Karusel və Kartlar */
+.faq-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.faq-cards {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+/* KARTIN İLKİN DİZAYNI */
+.faq-card {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border: 2px solid transparent; /* Hover üçün gizli çərçivə */
+    border-radius: 12px; /* Künclərin yuvarlaqlaşdırılması */
+    transition: all 0.3s ease; /* Effektlərin yumşaq keçidi */
+}
+
+.faq-card h3 {
+    font-size: 18px;
+    color: #374151;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.faq-card p {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Learn more linki */
+.learn-more {
+    color: #8b5cf6; 
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Ox işarəsi üçün hərəkət yeri */
+.learn-more span {
+    transition: transform 0.3s ease;
+}
+
+/* --- HOVER EFFEKTLƏRİ (Üzərinə gəldikdə) --- */
+
+/* 1. Kart hover olduqda */
+.faq-card:hover {
+    border: 2px solid #8b5cf6; /* Bənövşəyi çərçivə */
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15); /* Bənövşəyi kölgə */
+    transform: translateY(-5px); /* Yüngülcə yuxarı qalxma effekti */
+}
+
+/* 2. Link hover olduqda */
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+/* 3. Linkin oxu hover olduqda sağa sürüşsün */
+.learn-more:hover span {
+    transform: translateX(5px);
+}
+
+/* Sağ və Sol Oxlar */
+.nav-btn {
+    background: transparent;
+    border: 1px solid #b4a8fb;
+    color: #8b5cf6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.nav-btn:hover {
+    background: #f5f3ff;
+    border-color: #8b5cf6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .faq-cards {
+        flex-direction: column;
+    }
+    .nav-btn {
+        display: none; 
+    }
+}
