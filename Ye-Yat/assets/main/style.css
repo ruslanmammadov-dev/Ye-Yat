@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fdfbff;
+    color: #1a1a1a;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #ffffff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+
+.custom-icon {
+    width: 32px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #6b7280;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #7148fc;
+}
+
+.btn-book {
+    background-color: #7148fc;
+    color: #ffffff;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(113, 72, 252, 0.3);
+}
+
+.hero {
+    padding-top: 140px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.hero h1 span {
+    border-bottom: 4px solid rgba(113, 72, 252, 0.2);
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 30px auto;
+    color: #6b7280;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.btn-cta {
+    background: #7148fc;
+    color: white;
+    border: none;
+    padding: 18px 36px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 12px 25px rgba(113, 72, 252, 0.4);
+    margin-bottom: 60px;
+}
+
+.footer-image-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bottom-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
