@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran - Şəxsi Kabinet</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- İkonlar üçün FontAwesome -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+<div class="account-container">
+    <header class="account-header">
+        <h1>My Account</h1>
+        <p>Parametrlərinizi və seçimlərinizi yeniləyin</p>
+    </header>
+
+    <div class="account-content">
+        <!-- Sol Menyu -->
+        <nav class="side-menu">
+            <ul>
+                <li class="active"><i class="fa-solid fa-user"></i> Hesab Məlumatları</li>
+                <li><i class="fa-solid fa-utensils"></i> Menyum</li>
+                <li><i class="fa-solid fa-receipt"></i> Sifariş Tariçəsi</li>
+                <li><i class="fa-solid fa-location-dot"></i> Restoran Ünvanları</li>
+                <li><i class="fa-solid fa-star"></i> Rəylər</li>
+                <li><i class="fa-solid fa-shield-halved"></i> Məxfilik</li>
+            </ul>
+        </nav>
+
+        <!-- Orta Hissə (Form) -->
+        <main class="main-form">
+            <h2>Şəxsi Məlumatlar</h2>
+            <p class="info-text">E-poçt ünvanınızı dəyişsəniz, yenidən təsdiqləməli olacaqsınız.</p>
+            
+            <form>
+                <div class="input-group">
+                    <label>Tam Ad</label>
+                    <input type="text" placeholder="Ad Soyad">
+                </div>
+                
+                <div class="input-group">
+                    <label>E-poçt Ünvanı</label>
+                    <input type="email" placeholder="nümunə@mail.com">
+                </div>
+
+                <div class="input-group">
+                    <label>Şəhər</label>
+                    <select>
+                        <option>Bakı</option>
+                        <option>Gəncə</option>
+                        <option>Sumqayıt</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Telefon nömrəsi</label>
+                    <input type="tel" placeholder="+994 -- --- -- --">
+                </div>
+
+                <button type="submit" class="update-btn">Yenilə</button>
+            </form>
+        </main>
+
+        <!-- Sağ Tərəf (Məlumat Paneli) -->
+        <aside class="info-sidebar">
+            <div class="info-box">
+                <i class="fa-solid fa-circle-info"></i>
+                <h3>Məlumatlarınızın təhlükəsizliyi</h3>
+                <p>Biz sizin şəxsi məlumatlarınızı heç vaxt üçüncü tərəflərlə paylaşmırıq. Bütün məlumatlar şifrələnmiş şəkildə saxlanılır.</p>
+                <a href="#">Daha çox öyrən</a>
+            </div>
+        </aside>
+    </div>
+</div>
+
+</body>
+</html>
