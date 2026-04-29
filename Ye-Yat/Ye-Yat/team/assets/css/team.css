@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.t-top {
+    margin-bottom: 96px; /* Sizin ölçü */
+}
+
+.t-cards {
+    gap: 26.6px; /* Sizin ölçü */
+}
+
+.t-card {
+    width: 284px; /* Sizin ölçü */
+    height: 451px; /* Sizin ölçü */
+    border: 1px solid #E5E7EB; /* Şəkildəki incə xətt üçün */
+    border-radius: 8px; /* Kənarları azca yumşaltmaq üçün */
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.t-profile {
+    padding-top: 42px; /* Sizin ölçü */
+    width: 284px; /* Sizin ölçü */
+    height: 240px; /* Sizin ölçü */
+    background-color: #F8F9FA; /* Şəkildəki açıq boz fon */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.t-profile img {
+    height: 240px; /* Sizin ölçü */
+    object-fit: contain;
+}
+
+.t-line {
+    width: 100%; /* Sizin ölçü */
+    height: 1px; /* Sizin ölçü */
+    background-color: #E2E8F0; /* Qara yerinə şəkildəki açıq boz rəng */
+    margin: 16px 0; /* Dizayna uyğun yuxarı/aşağı boşluq */
+}
+
+.t-body {
+    width: 284px; /* Sizin ölçü */
+    height: 169px; /* Sizin ölçü */
+    padding: 20px; /* Sizin ölçü */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Şəkildəki mətn stili və rəngləri */
+.t-body h4:first-of-type, .t-name {
+    font-size: 17px;
+    font-weight: 600;
+    color: #2D3748; 
+    margin: 0;
+}
+
+.t-body h4:last-of-type {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4A5568; 
+    margin: 0 0 8px 0;
+}
+
+.t-body p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #718096; 
+    margin: 0;
+}
